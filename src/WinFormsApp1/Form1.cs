@@ -28,7 +28,7 @@ namespace WindowsFormsApp1 {
             }
 
             if (user.IsAdmin) new AdminForm(db).Show();
-            else new UserForm().Show();
+            else new UserForm(db).Show();
         }
     }
 }

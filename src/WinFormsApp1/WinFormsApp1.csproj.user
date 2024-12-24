@@ -25,5 +25,14 @@
     <Compile Update="Pages\UserForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Pages\User\ShowCourseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\User\ShowStudentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Pages\User\ShowTeacherList.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

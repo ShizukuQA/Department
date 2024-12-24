@@ -23,33 +23,72 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.label1 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            SuspendLayout();
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(288, 201);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(197, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Функционал находится в разработке";
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(257, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Посмотреть список студентов";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += this.button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(12, 41);
+            button2.Name = "button2";
+            button2.Size = new Size(257, 23);
+            button2.TabIndex = 1;
+            button2.Text = "Посмотреть список преподавателей\r\n";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(12, 70);
+            button3.Name = "button3";
+            button3.Size = new Size(257, 23);
+            button3.TabIndex = 2;
+            button3.Text = "Посмотреть список курсов\r\n\r\n";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += this.button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(12, 99);
+            button4.Name = "button4";
+            button4.Size = new Size(257, 23);
+            button4.TabIndex = 3;
+            button4.Text = "Выгрузить отчет по курсам\r\n\r\n";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += this.button4_Click;
             // 
             // UserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Name = "UserForm";
-            this.Text = "UserForm";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(315, 147);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "UserForm";
+            Text = "UserForm";
+            ResumeLayout(false);
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
